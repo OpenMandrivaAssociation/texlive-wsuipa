@@ -17,28 +17,18 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package provides a 7-bit IPA font, as MetaFont source, and
 macros for support under TeXt1 and LaTeX. The fonts (and
 macros) are now largely superseded by the tipa fonts.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -102,7 +92,6 @@ macros) are now largely superseded by the tipa fonts.
 %doc %{_texmfdistdir}/doc/generic/wsuipa/latex209/lipaman.tex
 %doc %{_texmfdistdir}/doc/generic/wsuipa/latex2e/ipaman.tex
 %doc %{_texmfdistdir}/doc/generic/wsuipa/text1/ipaman.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -113,5 +102,3 @@ macros) are now largely superseded by the tipa fonts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
