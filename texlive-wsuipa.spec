@@ -1,12 +1,12 @@
-# revision 15878
+# revision 25469
 # category Package
 # catalog-ctan /fonts/wsuipa
-# catalog-date 2008-12-04 21:34:53 +0100
+# catalog-date 2012-01-27 13:33:18 +0100
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-wsuipa
-Version:	20081204
-Release:	2
+Version:	20120127
+Release:	1
 Summary:	International Phonetic Alphabet fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wsuipa
@@ -19,7 +19,7 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package provides a 7-bit IPA font, as MetaFont source, and
+The package provides a 7-bit IPA font, as Metafont source, and
 macros for support under TeXt1 and LaTeX. The fonts (and
 macros) are now largely superseded by the tipa fonts.
 
@@ -78,20 +78,20 @@ macros) are now largely superseded by the tipa fonts.
 %{_texmfdistdir}/tex/latex/wsuipa/ipa.sty
 %{_texmfdistdir}/tex/latex/wsuipa/ipalmacs.sty
 %{_texmfdistdir}/tex/latex/wsuipa/uipa.fd
-%doc %{_texmfdistdir}/doc/generic/wsuipa/LICENCE-wsuipa.txt
-%doc %{_texmfdistdir}/doc/generic/wsuipa/README
-%doc %{_texmfdistdir}/doc/generic/wsuipa/changes.dec93
-%doc %{_texmfdistdir}/doc/generic/wsuipa/changes.jun91
-%doc %{_texmfdistdir}/doc/generic/wsuipa/changes.mar91
-%doc %{_texmfdistdir}/doc/generic/wsuipa/changes.may92
-%doc %{_texmfdistdir}/doc/generic/wsuipa/changes.nov90
-%doc %{_texmfdistdir}/doc/generic/wsuipa/compilefonts
-%doc %{_texmfdistdir}/doc/generic/wsuipa/ipamacs.tex
-%doc %{_texmfdistdir}/doc/generic/wsuipa/ipaman.ps
-%doc %{_texmfdistdir}/doc/generic/wsuipa/latex209/ipalman.tex
-%doc %{_texmfdistdir}/doc/generic/wsuipa/latex209/lipaman.tex
-%doc %{_texmfdistdir}/doc/generic/wsuipa/latex2e/ipaman.tex
-%doc %{_texmfdistdir}/doc/generic/wsuipa/text1/ipaman.tex
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/LICENCE-wsuipa.txt
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/README
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/changes.dec93
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/changes.jun91
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/changes.mar91
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/changes.may92
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/changes.nov90
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/compilefonts
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/ipamacs.tex
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/ipaman.ps
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/latex209/ipalman.tex
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/latex209/lipaman.tex
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/latex2e/ipaman.tex
+%doc %{_texmfdistdir}/doc/fonts/wsuipa/text1/ipaman.tex
 
 #-----------------------------------------------------------------------
 %prep
