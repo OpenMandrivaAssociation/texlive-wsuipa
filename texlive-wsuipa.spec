@@ -102,3 +102,20 @@ macros) are now largely superseded by the tipa fonts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120127-1
++ Revision: 779713
+- Update to latest release.
+
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081204-2
++ Revision: 757546
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081204-1
++ Revision: 719914
+- texlive-wsuipa
+- texlive-wsuipa
+- texlive-wsuipa
+
