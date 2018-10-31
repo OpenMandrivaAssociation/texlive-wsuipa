@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-wsuipa
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	International Phonetic Alphabet fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wsuipa
