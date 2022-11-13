@@ -1,18 +1,12 @@
-# revision 25469
-# category Package
-# catalog-ctan /fonts/wsuipa
-# catalog-date 2012-01-27 13:33:18 +0100
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-wsuipa
-Version:	20190228
+Version:	25469
 Release:	1
 Summary:	International Phonetic Alphabet fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wsuipa
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wsuipa.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wsuipa.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wsuipa.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wsuipa.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ macros for support under TeXt1 and LaTeX. The fonts (and
 macros) are now largely superseded by the tipa fonts.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -95,27 +89,10 @@ macros) are now largely superseded by the tipa fonts.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120127-1
-+ Revision: 779713
-- Update to latest release.
-
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081204-2
-+ Revision: 757546
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081204-1
-+ Revision: 719914
-- texlive-wsuipa
-- texlive-wsuipa
-- texlive-wsuipa
-
