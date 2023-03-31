@@ -1,6 +1,6 @@
 Name:		texlive-wsuipa
 Version:	25469
-Release:	1
+Release:	2
 Summary:	International Phonetic Alphabet fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wsuipa
