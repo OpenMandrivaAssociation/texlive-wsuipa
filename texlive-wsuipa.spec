@@ -3,7 +3,7 @@ Version:	25469
 Release:	2
 Summary:	International Phonetic Alphabet fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/wsuipa
+URL:		https://www.ctan.org/tex-archive/fonts/wsuipa
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wsuipa.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wsuipa.doc.r%{version}.tar.xz
